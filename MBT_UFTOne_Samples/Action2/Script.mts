@@ -7,6 +7,7 @@ End If @@ script infofile_;_ZIP::ssf18.xml_;_
 
 If Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Registration").Exist(5) Then
 	Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Registration").Click
+	wait(3)
 	Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebEdit("firstName").Set Parameter("firstName") @@ script infofile_;_ZIP::ssf4.xml_;_
 	Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebEdit("lastName").Set Parameter("lastName") @@ script infofile_;_ZIP::ssf5.xml_;_
 	Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebEdit("email").Set Parameter("email") @@ script infofile_;_ZIP::ssf6.xml_;_
