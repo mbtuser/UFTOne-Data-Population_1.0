@@ -33,7 +33,7 @@ End If
 
 If Browser("Dashboard - Advantage").Page("Dashboard - Advantage").Link(accountsLinkText).Exist(5) Then
     Wait(3)
-    Browser("Dashboard - Advantage").Page("Dashboard - Advantage").Link("Accounts").Click
+    Browser("Dashboard - Advantage").Page("Dashboard - Advantage").Link(accountsLinkText).Click
     Wait(3)
 
     If Browser("Dashboard - Advantage").Page("Accounts - Advantage Bank").WebButton("Open new account").Exist(3) Then
