@@ -28,7 +28,7 @@ Dim accountsLinkText
 accountsLinkText = Parameter("ElementName")
 
 If Trim(accountsLinkText) = "" Then
-    accountsLinkText = "Accounts"
+    accountsLinkText = Parameter("ElementName")
 End If
 
 If Browser("Dashboard - Advantage").Page("Dashboard - Advantage").Link(accountsLinkText).Exist(5) Then
